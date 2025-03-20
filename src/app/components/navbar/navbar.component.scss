@@ -1,0 +1,48 @@
+@use '@angular/material' as mat;
+
+mat-toolbar{
+    height: 10%;
+    background-color: var(--mat-sys-secondary);
+    color: var(--mat-sys-on-tertiary);
+    font-family: "Bytesized", sans-serif;
+    font-size: x-large;
+}
+.menu-icon{
+    background-color: var(--mat-sys-secondary-fixed);
+}
+.button-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+} 
+.panel-menu{
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 50%;
+    max-width: 90%;
+    padding: 4px;
+    background-color: var(--mat-sys-secondary);
+    margin-top: 10px;
+    font-family: "Roboto";
+    border-radius: 10px;
+}
+.item-menu{
+    font-size: medium;
+    background-color: var(--mat-sys-secondary);
+    padding: 10px; 
+    height: 60%;
+    margin: 2px;
+    border-radius: 10px;
+    border: 0;
+    color: var(--mat-sys-on-secondary);
+}
+.item-menu:active {
+    background-color: var(--mat-sys-tertiary);
+}
+.item-menu:hover {
+    background-color: var(--mat-sys-secondary-container);
+    color: var(--mat-sys-on-secondary-container);
+}
