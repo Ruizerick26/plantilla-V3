@@ -6,9 +6,12 @@ mat-toolbar{
     color: var(--mat-sys-on-tertiary);
     font-family: "Bytesized", sans-serif;
     font-size: x-large;
-}
+    position: fixed;
+    top: -1%;
+    z-index: 2;
+} 
 .menu-icon{
-    background-color: var(--mat-sys-secondary-fixed);
+    background-color: var(--mat-sys-tertiary);
 }
 .button-menu{
     display: flex;

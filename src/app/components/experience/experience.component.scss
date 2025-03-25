@@ -1,0 +1,33 @@
+@use '@angular/material' as mat;
+
+.container{
+    background-color: var(--mat-sys-tertiary-fixed-dim);
+    width: 75%;
+    height: 60%;
+    margin: 3%;
+    margin-left: 13%;
+    padding: 1%;
+    border-radius: 4%;
+    color: var(--mat-sys-on-tertiary-fixed);
+}
+
+mat-expansion-panel{
+    background-color: var(--mat-sys-tertiary);
+    color: var(--mat-sys-on-tertiary);
+}
+mat-panel-title{
+    color: var(--mat-sys-on-tertiary);
+}
+mat-panel-description{
+    color: var(--mat-sys-on-tertiary);
+}
+.container-experience{
+    margin: 1%;
+}
+.title{
+    height: max-content;
+
+}
+header-indicator-color{
+    color: var(--mat-sys-on-tertiary);
+}
