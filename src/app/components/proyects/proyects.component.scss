@@ -3,35 +3,42 @@
 .container{
     background-color: var(--mat-sys-tertiary-fixed-dim);
     width: 75%;
-    height: 60%;
+    height: max-content;
     margin: 3%;
     margin-left: 13%;
     padding: 1%;
     border-radius: 4%;
     color: var(--mat-sys-on-tertiary-fixed);
 }
-.container-experience{
-    margin: 1%;
-    width: 35%;
-}
-
 .title{
     height: max-content;
     width: max-content;
     margin: 1%;
-    margin-left: 35%;
+    margin-left: 40%;
     font-family: "Big Shoulders Stencil", sans-serif;
     font-size: xx-large; 
 }
-mat-expansion-panel{
+.card-proy{
+    width: min-content;
+    height: max-content;
+    padding: 1%;
+    margin: 1%;
     background-color: var(--mat-sys-tertiary);
     color: var(--mat-sys-on-tertiary);
-    margin: 2%;
-    padding: 1%;
 }
-mat-panel-description{
+.btn-enlace{
+    background-color: var(--mat-sys-on-tertiary-fixed);
     color: var(--mat-sys-on-tertiary);
+    width: max-content;
 }
-mat-divider{
-    border-top-color: var(--mat-sys-on-tertiary) ;
+.image-card{
+    width: 98%;
+    margin: 1%; 
+}
+.avatar{
+    background-image: url('../../../assets/logo.jpg');
+    background-size: cover;
+} 
+.content{
+    font-size: small;
 }
