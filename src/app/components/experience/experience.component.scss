@@ -1,10 +1,9 @@
 @use '@angular/material' as mat;
 
 .container{
-    background-color: var(--mat-sys-tertiary-fixed-dim);
     width: 75%;
-    height: 60%;
-    margin: 3%;
+    height: max-content;
+    margin: 5%;
     margin-left: 13%;
     padding: 1%;
     border-radius: 4%;
@@ -32,6 +31,6 @@ mat-expansion-panel{
 mat-panel-description{
     color: var(--mat-sys-on-tertiary);
 }
-mat-divider{
+.divider{
     border-top-color: var(--mat-sys-on-tertiary) ;
 }
