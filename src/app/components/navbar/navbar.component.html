@@ -1,20 +1,16 @@
 <mat-toolbar>
-  <div class="button-menu">
-
+    <span>RCEE-Developer</span> 
+    <span class="spacer"></span>
     <button mat-mini-fab class="menu-icon" aria-label="menu icon" [cdkMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
     </button>
     <ng-template #menu>
-      <div class="panel-menu" cdkMenu>
+      <div class="panel-menu" cdkMenu xPosition="after">
         <button class="item-menu" cdkMenuItem>Inicio</button>
         <button class="item-menu" cdkMenuItem>Experiencia</button>
         <button class="item-menu" cdkMenuItem>Proyectos</button>
         <button class="item-menu" cdkMenuItem>Aprendizaje</button>
       </div>
     </ng-template>
-    <span>RCEE-Developer</span> 
-    <span class="spacer"></span>
-  </div>
-  
 </mat-toolbar>
 

@@ -10,16 +10,12 @@ mat-toolbar{
     position: fixed;
     top: -1%;
     z-index: 2;
-    padding: 0 15% ;
+    padding: 0 16% ;
 } 
 .menu-icon{
     background-color: var(--mat-sys-tertiary);
 }
-.button-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .mat-mdc-button-base {
     margin: 8px 8px 8px 0;
 } 
@@ -29,14 +25,14 @@ mat-toolbar{
     min-width: 50%;
     max-width: 90%;
     padding: 4px;
-    background-color: var(--mat-sys-secondary);
+    background-color: var(--mat-sys-on-tertiary-fixed);
     margin-top: 10px;
     font-family: "Roboto";
     border-radius: 10px;
 }
 .item-menu{
     font-size: medium;
-    background-color: var(--mat-sys-secondary);
+    background-color: var(--mat-sys-on-tertiary-fixed);
     padding: 10px; 
     height: 60%;
     margin: 2px;

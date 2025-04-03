@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="title">
+        -- SKILLS --
+    </div>
+    <mat-divider></mat-divider>
+    <div class="skills">
+        @for (info of skils; track info){
+            <mat-card class="skill">
+                <mat-card-header>
+                    <img mat-card-avatar src={{info.image}} alt="skill" class="image-card">
+                    <mat-card-title>
+                        <p class="card-title">
+                            {{info.name}}
+                        </p>
+                    </mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        }
+    </div>
+</div>
+ 

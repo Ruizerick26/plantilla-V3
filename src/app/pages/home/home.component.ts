@@ -7,11 +7,13 @@ import {DomSanitizer} from '@angular/platform-browser';
 import { ExperienceComponent } from '../../components/experience/experience.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { ProyectsComponent } from '../../components/proyects/proyects.component';
+import { SkillsComponent } from '../../components/skills/skills.component';
 
 
 @Component({
   selector: 'app-home',
-  imports: [ FooterComponent, MatCardModule, MatButtonModule, MatIconModule, ExperienceComponent, MatDividerModule, ProyectsComponent ],
+  imports: [ FooterComponent, MatCardModule, MatButtonModule, MatIconModule, 
+    ExperienceComponent, MatDividerModule, ProyectsComponent, SkillsComponent ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

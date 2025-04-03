@@ -22,19 +22,20 @@ body{
     height: min-content;
     margin: 2%;
     padding: 2%;
-    background-color: var(--mat-sys-tertiary);
+    background-color: var(--mat-sys-tertiary) ;
     display: flex;
     flex-direction: column;
     font-size: x-large;
     line-height: normal;
     margin-left: 10%;
     align-self: center;
+    border-radius: 4%;
 }
 .perfil{
     width: 30%;
     height: 75%;
     margin: 2%; 
-    border-radius: 10%;
+    border-radius: 15px;
     align-self: center;
 }
 .btnsocialN{
