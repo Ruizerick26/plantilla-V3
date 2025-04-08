@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+
+.container{
+    width: 75%;
+    height: max-content;
+    margin: 5%;
+    margin-left: 13%;
+    padding: 1%;
+    border-radius: 4%;
+    color: var(--mat-sys-on-tertiary-fixed);
+}
+.title{
+    height: max-content;
+    width: max-content;
+    margin: 1%;
+    margin-left: 42%;
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-size: xx-large; 
+}

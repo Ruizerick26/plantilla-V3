@@ -8,12 +8,15 @@ import { ExperienceComponent } from '../../components/experience/experience.comp
 import {MatDividerModule} from '@angular/material/divider';
 import { ProyectsComponent } from '../../components/proyects/proyects.component';
 import { SkillsComponent } from '../../components/skills/skills.component';
+import { ContactComponent } from '../../components/contact/contact.component';
+import { LearningComponent } from '../../components/learning/learning.component';
 
 
 @Component({
   selector: 'app-home',
   imports: [ FooterComponent, MatCardModule, MatButtonModule, MatIconModule, 
-    ExperienceComponent, MatDividerModule, ProyectsComponent, SkillsComponent ],
+    ExperienceComponent, MatDividerModule, ProyectsComponent, SkillsComponent,
+  ContactComponent, LearningComponent ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

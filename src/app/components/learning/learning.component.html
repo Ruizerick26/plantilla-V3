@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="title">
+        --Educación-- 
+    </div>
+    @for (info of learn; track info){
+        <mat-card class="card-education">
+            <mat-card-header>
+                <mat-card-title>
+                    {{info.titulo}}
+                </mat-card-title>
+                <mat-card-subtitle>
+                    {{info.institucion}}
+                </mat-card-subtitle>
+            </mat-card-header> 
+            <mat-card-actions>
+                <button mat-fab extended class="btn-date">
+                    {{info.anios}}
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    }
+</div> 
