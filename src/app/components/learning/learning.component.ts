@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 interface learningData{
   titulo: string,
@@ -10,7 +11,7 @@ interface learningData{
 
 @Component({
   selector: 'app-learning',
-  imports: [MatCardModule, MatButtonModule],
+  imports: [MatCardModule, MatButtonModule, MatDividerModule],
   templateUrl: './learning.component.html',
   styleUrl: './learning.component.scss'
 })

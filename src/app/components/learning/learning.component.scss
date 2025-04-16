@@ -18,7 +18,7 @@
     font-size: xx-large; 
 }
 .card-education{
-    width: 35%;
+    
     height: max-content;
     align-items: center;
     margin: 2%;
@@ -27,4 +27,9 @@
     background-color: var(--mat-sys-on-tertiary-fixed);
     color: var(--mat-sys-on-tertiary);
     cursor: default;
+}
+.learns{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1%;
 }

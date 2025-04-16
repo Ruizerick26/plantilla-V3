@@ -17,3 +17,25 @@
     font-family: "Big Shoulders Stencil", sans-serif;
     font-size: xx-large; 
 }
+.form{
+    display: inline-flex;
+    width: 100%;
+    margin: 1%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-data{
+    width: 60%;
+    height: max-content;
+}
+.input-container{
+    width: 100%;
+}
+.submit{
+    margin: 0 35%;
+}
+.mat-mdc-raised-button:not(:disabled){
+    background-color: var(--mat-sys-on-tertiary-fixed);
+    color: var(--mat-sys-on-tertiary);
+}
