@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AbstractType, Component, signal } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -9,7 +9,9 @@ import {
   NgForm,
   Validators,
   FormsModule,
-  ReactiveFormsModule, } from '@angular/forms';
+  ReactiveFormsModule,
+  FormGroup,
+  AbstractControl, } from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -26,6 +28,22 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   matcher = new MyErrorStateMatcher();
+
+  contatForm = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    lastname: new FormControl('',[Validators.required]),
+    email: new FormControl('',[Validators.required, Validators.email]),
+    message: new FormControl('')
+  })
+
+  onSubmit(){
+    console.log("enviado")
+    console.warn(this.contatForm.value)
+    console.log('-------')
+    this.contatForm.reset()
+    this.contatForm.controls.email.setErrors(null)
+    this.contatForm.controls.name.setErrors(null)
+    this.contatForm.controls.lastname.setErrors(null)
+  }
 }

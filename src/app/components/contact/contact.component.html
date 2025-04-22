@@ -4,39 +4,39 @@
     </div>
     <mat-divider></mat-divider>
     <div class="form">
-        <form class="form-data">
+        <form class="form-data" [formGroup]="contatForm" (ngSubmit)="onSubmit()"> 
             <table class="input-container">
                 <tr>
                     <td>
                         <mat-form-field class="input-container">
                             <mat-label>Nombre</mat-label>
-                            <input matInput>
+                            <input matInput type="text" formControlName="name">
                         </mat-form-field>
                     </td>
                     <td>
                         <mat-form-field class="input-container">
                             <mat-label>Apellido</mat-label>
-                            <input matInput>
+                            <input matInput type="text" formControlName="lastname">
                         </mat-form-field>
                     </td>
                 </tr>
             </table>
             <mat-form-field class="input-container">
                 <mat-label>Correo Electrónico</mat-label>
-                <input matInput type="email" [formControl]="emailFormControl" [errorStateMatcher]="matcher">
-                <mat-hint>correo electrónico Valido</mat-hint>
-                @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')){
+                <input matInput type="email"  [errorStateMatcher]="matcher" formControlName="email" >
+                @if(contatForm.controls.email.errors?.['email']){
                     <mat-error>Por favor ingresa un correo electrónico valido</mat-error>
                 }
-                @if (emailFormControl.hasError('required')) {
+
+                @if (contatForm.controls.email.errors?.['required']) {
                     <mat-error>Correo Electrónico <strong> Requerido</strong></mat-error>
                 }
             </mat-form-field><br>
             <mat-form-field class="input-container">
                 <mat-label>Mensaje</mat-label>
-                <textarea matInput></textarea>
+                <textarea matInput formControlName="message" type="text"></textarea>
             </mat-form-field>
+            <button mat-raised-button class="submit" [disabled]="!contatForm.valid">Enviar</button>
         </form>
-        <button mat-raised-button class="submit">Enviar</button>
     </div>
 </div> 
