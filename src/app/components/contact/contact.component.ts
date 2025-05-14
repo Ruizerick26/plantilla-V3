@@ -13,9 +13,8 @@ import {
   FormGroup,
   AbstractControl, } from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
-import {MatDialog, MatDialogModule, MatDialogTitle, MatDialogContent, MatDialogActions} from '@angular/material/dialog'
-
-
+import {MatDialog, MatDialogModule, MatDialogTitle, MatDialogContent, MatDialogActions} from '@angular/material/dialog';
+import { NodemailerService } from './nodemailer.service';
 
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -24,7 +23,6 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
   }
 }
-
 
 
 
@@ -38,6 +36,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class ContactComponent {
   readonly dialog = inject(MatDialog);
   matcher = new MyErrorStateMatcher();
+  api: NodemailerService = inject(NodemailerService)
 
   contatForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
@@ -46,18 +45,21 @@ export class ContactComponent {
     message: new FormControl('')
   })
 
-  onSubmit(){
+ onSubmit() {
+    this.api.sendmail(this.contatForm.value.email!,this.contatForm.value.name!,this.contatForm.value.lastname!,this.contatForm.value.message!)
     console.log("enviado")
     console.log(this.contatForm)
-    console.warn(this.contatForm.value)
+    console.warn(this.contatForm.value) 
     console.log('-------')
     this.dialog.open(messagedialog)
     this.contatForm.reset()
-    this.contatForm.controls.email.setErrors(null)
+    this.contatForm.controls.email.setErrors(null) 
     this.contatForm.controls.name.setErrors(null)
     this.contatForm.controls.lastname.setErrors(null)
   }
 } 
+
+//popup message
 
 @Component({
   selector: 'dialogic-messsaje',
