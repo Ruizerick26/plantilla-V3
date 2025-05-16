@@ -1,5 +1,7 @@
 import { Injectable,inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +16,7 @@ export class NodemailerService {
       apellido: lastname,
       mensaje: message
     }
-    const url= "http://localhost:300/api/sendmail"
+    const url=  `${environment.apiURL}/api/sendmail`
     try{
       this.http.post(url,json).subscribe(JSON => {
         console.log("correo enviado",JSON)
