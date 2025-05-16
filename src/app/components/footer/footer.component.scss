@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+.container{
+    display: flex;
+    width: 100%;
+    background-color: var(--mat-sys-tertiary);
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-size: large;
+    justify-content: center;
+}
+.label{
+    display: inline-flex;
+    padding: 2%;
+}

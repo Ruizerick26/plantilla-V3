@@ -48,8 +48,6 @@ export class ContactComponent {
  onSubmit() {
     this.api.sendmail(this.contatForm.value.email!,this.contatForm.value.name!,this.contatForm.value.lastname!,this.contatForm.value.message!)
     console.log("enviado")
-    console.log(this.contatForm)
-    console.warn(this.contatForm.value) 
     console.log('-------')
     this.dialog.open(messagedialog)
     this.contatForm.reset()

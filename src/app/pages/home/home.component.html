@@ -1,4 +1,5 @@
-<div class="container" id="home">
+<mat-divider class="separator" id="home"></mat-divider>
+<div class="container">
     <img mat-card-xl-image src="../../../assets/perfil.jpg" alt="Foto perfil" class="perfil">
     <div class="card-perfil">
         <div class="content">
@@ -9,18 +10,18 @@
             gran capacidad de adaptación y aprendizaje a diversos 
             entornos de trabajo.
         </div>
-
+        
         <div class="button-row">
-            <a mat-mini-fab class="btnsocialN" href="https://wa.me/593963113677">
+            <a mat-mini-fab class="btnsocialN" href="https://wa.me/593963113677" title="Whatsapp">
                 <mat-icon svgIcon="whatsapp"></mat-icon>
             </a>
-            <a mat-mini-fab class="btnsocialN" href="https://www.linkedin.com/in/rcee0234134">
+            <a mat-mini-fab class="btnsocialN" href="https://www.linkedin.com/in/rcee0234134" title="Linkedin">
                 <mat-icon svgIcon="linkedin"></mat-icon>
             </a> 
             <a mat-mini-fab class="btnsocialN" href="https://github.com/Ruizerick26" target="_blank">
-                <img src="../../../assets/github.png" width="55%" class="imageN">
+                <img src="../../../assets/github.png" width="55%" class="imageN" title="Github">
             </a>
-            <a mat-mini-fab class="btnsocialN" href="https://drive.google.com/file/d/14ECurVXycPjGuElh1ELr6BTgheDYp8fE/view?usp=sharing">
+            <a mat-mini-fab class="btnsocialN" href="https://drive.google.com/file/d/14ECurVXycPjGuElh1ELr6BTgheDYp8fE/view?usp=sharing" title="CV">
                 <mat-icon>file_open</mat-icon>
             </a>
         </div> 
@@ -28,18 +29,23 @@
 </div>
 
 <!-- Experiencia-->
-<app-experience id="experience" />
+<mat-divider class="separator" id="experience"></mat-divider>
+<app-experience />
 
 <!-- Proyectos-->
+<mat-divider class="separator" id="proyectos"></mat-divider>
 <app-proyects/>
 
 <!--Habilidades-->
+<mat-divider class="separator" id="skils"></mat-divider>
 <app-skills/>
 
 <!--Aprendizaje-->
+<mat-divider class="separator" id="learning"></mat-divider>
 <app-learning/>
 
 <!--Contacto-->
+<mat-divider class="separator" id="contact"></mat-divider>
 <app-contact/>
 
 

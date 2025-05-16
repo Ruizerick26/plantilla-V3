@@ -18,7 +18,7 @@
     font-size: xx-large; 
 }
 .card-proy{
-    width: min-content;
+    width: 100%;
     height: max-content;
     padding: 1%;
     margin: 1%;
@@ -35,9 +35,13 @@
     margin: 1%; 
 }
 .avatar{
-    background-image: url('../../../assets/logo.jpg');
     background-size: cover;
 } 
 .content{
     font-size: small;
+}
+.proyectos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1%;
 }

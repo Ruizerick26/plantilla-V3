@@ -39,6 +39,8 @@ mat-toolbar{
     border-radius: 10px;
     border: 0;
     color: var(--mat-sys-on-secondary);
+    text-align: center;
+    text-decoration: none;
 }
 .item-menu:active {
     background-color: var(--mat-sys-tertiary);
