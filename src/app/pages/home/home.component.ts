@@ -10,13 +10,13 @@ import { ProyectsComponent } from '../../components/proyects/proyects.component'
 import { SkillsComponent } from '../../components/skills/skills.component';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { LearningComponent } from '../../components/learning/learning.component';
-
+import { NavbarComponent } from '../../components/navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
   imports: [ FooterComponent, MatCardModule, MatButtonModule, MatIconModule, 
     ExperienceComponent, MatDividerModule, ProyectsComponent, SkillsComponent,
-  ContactComponent, LearningComponent ],
+  ContactComponent, LearningComponent, NavbarComponent ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
