@@ -34,7 +34,7 @@ export class ProyectsComponent {
       imagen:"../../../assets/fashion.png", colaboradores: ["Gilmar morales", "Cristian Simba"], detalles: [{titulo:"FASHIONGEC.com",url:"https://fashiongec.vercel.app/"}], avatar:"../../../assets/logo.jpg"
     },
     {nombre:"PORTAFOLIO WEB V2",descripcion:"Portafolio Web realizado con Node.js y Angular",
-      imagen:"../../../assets/portafolioweb.png", colaboradores: [], detalles: [{titulo:"REPOSITORIO",url:"https://github.com/Ruizerick26/plantilla-V3"},{titulo:"DESPLIEGUE",url:""}], avatar: avatar_default
+      imagen:"../../../assets/portafolioweb.png", colaboradores: [], detalles: [{titulo:"REPOSITORIO",url:"https://github.com/Ruizerick26/plantilla-V3"},{titulo:"DESPLIEGUE",url:"https://protafoliorceee-ruizerick26s-projects.vercel.app/"}], avatar: avatar_default
     },
   ]
 

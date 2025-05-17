@@ -1,8 +1,0 @@
-[build]
-# base= "no-ssr-from"
-    command = "ng build"
-    publish = "dist/no-ssr-from/browser"
-    [[redirects]]
-    from = "/*"
-    to= "index.html"
-    status = 200
