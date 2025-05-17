@@ -2,8 +2,8 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "browser/index.html"
+      "destination": "/index.html"
     }
   ],
-  "outputDirectory": "dist/portafolio-v2"
+  "outputDirectory": "dist/portafolio-v2/browser"
 }
