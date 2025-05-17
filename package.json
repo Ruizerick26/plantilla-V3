@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-path=dist/portafolio-v2",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portafolioV2": "node dist/portafolio-v2/server/server.mjs",
